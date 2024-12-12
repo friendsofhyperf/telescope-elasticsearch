@@ -18,10 +18,10 @@ composer require friendsofhyperf/telescope-elasticsearch
 // config/autoload/telescope.php
 return [
     'storage' => [
+        'driver' => 'elasticsearch',
         'elasticsearch' => [
             'driver' => FriendsOfHyperf\TelescopeElasticsearch\Storage\ElasticsearchEntriesRepository::class,
             'index' => 'telescope_entries',
-
             'hosts' => ['127.0.0.1'],
             'username' => null,
             'password' => null,
